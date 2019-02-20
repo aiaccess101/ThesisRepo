@@ -1,0 +1,231 @@
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0 !important;
+	background-size: cover;
+	position: fixed;
+	background-image: url('../background/exam.jpg');
+}
+
+div#header-section{
+	width: 100%;
+	height: 80px;
+	background-color: maroon;
+	opacity: 0.8;
+}
+
+div#navigation-pane{
+	width: 300px;
+	height: 630px;
+	background-color: gold;
+	opacity: 0.8;
+	margin-top: 50px;
+	float: left;
+	border-right-style: dotted;
+	border-top-style: dotted;
+	border-bottom-style: dotted;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	text-align: left;
+}
+
+div#data-container{
+	width: 1200px;
+	height: 630px;
+	background-color: white;
+	float: right;
+	opacity: 0.9;
+	margin-top: 50px;
+	margin-right: 50px;
+	border-style: dotted;
+	border-radius: 10px;
+	overflow: auto;
+}
+
+div.spacing{
+	width: 100%;
+	height: 30px;
+	opacity: 0.9;
+	border-width: 1px;
+	border-top: solid black;
+}
+
+div.statistics-container{
+	width: 100%;
+	height: 300px;
+	opacity: 0.9;
+	text-align: center;
+}
+ 
+button#top-navigation-button{
+	margin-top: 50px;
+}
+
+button.navigation-buttons{ 
+	color: maroon;
+	font-size: 15px;
+	width: 100%;
+	height: 60px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: transparent;
+	border: solid transparent;
+	border-bottom: solid black;
+	border-width: 2px;
+	opacity: 0.8;
+	text-align: left;
+}
+
+button.navigation-buttons:focus{
+	background-color: grey;
+}
+
+button#logout-button{
+	background-color: gold;
+	border-radius: 5px;
+	width: 150px;
+	height: 35px;
+	font-size: 15px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
+	color:maroon;
+}
+
+img#app-logo{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-left: 95px;
+	margin-top: 20px;
+}
+
+img#profile-picture{
+	float: left;
+	margin-left: 30px;
+	margin-top: 15px;
+	width:  40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+label#admin-label{
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 20px;
+	float: left;
+	color: gold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+label.exam-label{
+	color: black;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 25px;
+	margin-left: -360px;
+
+}
+
+div.bar-graph{
+	margin-top: 20px;
+	margin-left: 300px;
+	width: 600px;
+	height: 180px;
+	border-left: solid black;
+	border-bottom: solid black;
+
+}
+
+div.pass-fail-bar{
+	height: 40px;
+	border-width: 20px;
+	opacity: 0.7;
+	background-color: gray;
+	width: 276px;
+
+}
+
+div#bar-pass1{
+	margin-top: 10px;
+	width: 324px;
+	border-top: solid lime;
+	border-bottom: solid lime;
+	border-right: solid lime;
+}
+
+
+div#bar-fail1{
+	margin-top: 30px;
+	width: 276px;
+	border-top: solid red;
+	border-bottom: solid red;
+	border-right: solid red;
+}
+
+p.bar-percentage{
+	margin-top: 10px;
+	color: black;
+	font-size: 15px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+p.pass-label{
+	float: left;
+	margin-left: 250px;
+	margin-top: 100px;
+	font-size: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: lime;
+}
+
+
+p.fail-label{
+	float: left;
+	margin-top: 180px;
+	font-size: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: red;
+	margin-left: -40px;
+}
+
+div#bar-pass2{
+	margin-top: 10px;
+	width: 234px;
+	border-top: solid lime;
+	border-bottom: solid lime;
+	border-right: solid lime;
+}
+
+
+div#bar-fail2{
+	margin-top: 30px;
+	width: 366px;
+	border-top: solid red;
+	border-bottom: solid red;
+	border-right: solid red;
+}
+
+
+div#bar-pass3{
+	margin-top: 10px;
+	width: 468px;
+	border-top: solid lime;
+	border-bottom: solid lime;
+	border-right: solid lime;
+}
+
+
+div#bar-fail3{
+	margin-top: 30px;
+	width: 132px;
+	border-top: solid red;
+	border-bottom: solid red;
+	border-right: solid red;
+}
+
+p.number-of-respondents{
+	margin-top: 10px;
+	font-size: 15px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: blue;
+}
