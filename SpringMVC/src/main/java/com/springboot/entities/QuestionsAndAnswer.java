@@ -36,13 +36,35 @@ public class QuestionsAndAnswer implements Serializable {
 	@Column(name="questions_and_answers_exam_id")
 	private int questionsAndAnswersExamId;
 
-	@Column(name="questions_and_answers_number")
-	private int questionsAndAnswersNumber;
-
 	@Column(name="questions_and_answers_question")
 	private String questionsAndAnswersQuestion;
+	
+	@Column(name="question_and_answers_difficulty")
+	private double difficulty;
+	
+	@Column(name="question_and_answers_wrongly_answered")
+	private int wrongly_answered;
+	
+	@Column(name="question_and_answers_correctly_answered")
+	private int correctly_answered;
+	
+	@Column(name="question_and_answers_total_answer")
+	private int total_answer;
+	
 
 	public QuestionsAndAnswer() {
+	}
+	
+	public QuestionsAndAnswer(int id,String answer, String choiceA, String choiceB, String choiceC, String choiceD, String question) {
+		this.correctly_answered = 5;
+		this.wrongly_answered = 5;
+		this.questionsAndAnswersExamId = id;
+		this.questionsAndAnswersAnswer = answer;
+		this.questionsAndAnswersChoiceA = choiceA;
+		this.questionsAndAnswersChoiceB = choiceB;
+		this.questionsAndAnswersChoiceC = choiceC;
+		this.questionsAndAnswersChoiceD = choiceD;
+		this.questionsAndAnswersQuestion = question;
 	}
 
 	public int getQuestionsAndAnswersId() {
@@ -101,20 +123,69 @@ public class QuestionsAndAnswer implements Serializable {
 		this.questionsAndAnswersExamId = questionsAndAnswersExamId;
 	}
 
-	public int getQuestionsAndAnswersNumber() {
-		return this.questionsAndAnswersNumber;
-	}
-
-	public void setQuestionsAndAnswersNumber(int questionsAndAnswersNumber) {
-		this.questionsAndAnswersNumber = questionsAndAnswersNumber;
-	}
-
 	public String getQuestionsAndAnswersQuestion() {
 		return this.questionsAndAnswersQuestion;
 	}
 
 	public void setQuestionsAndAnswersQuestion(String questionsAndAnswersQuestion) {
 		this.questionsAndAnswersQuestion = questionsAndAnswersQuestion;
+	}
+	
+	public double getQuestionsAndAnswersDifficulty() {
+		return this.difficulty;
+	}
+
+	public void setQuestionsAndAnswersDifficulty(double difficulty) {
+		this.difficulty = difficulty;
+	}
+	
+	public int getQuestionsAndAnswersWronglyAnswered() {
+		return this.wrongly_answered;
+	}
+
+	public void setQuestionsAndAnswersWronglyAnswred(int wrongly_answered) {
+		this.wrongly_answered = wrongly_answered;
+	}
+	public double getQuestionsAndAnswersCorrectlyAnswered() {
+		return this.correctly_answered;
+	}
+
+	public void setQuestionsAndAnswersDifficulty(int correctly_answered) {
+		this.correctly_answered = correctly_answered;
+	}
+	
+	public double getQuestionsAndAnswersTotalAnswer() {
+		return this.total_answer;
+	}
+
+	public void setQuestionsAndAnswersTotalAnswer(int total_answer) {
+		this.total_answer = total_answer;
+	}
+	public boolean checkAnswer(String answer) {
+		if(answer == this.questionsAndAnswersAnswer) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	public void changeDifficulty(boolean answered) {
+		if(answered) {
+			this.correctly_answered++;
+		}else {
+			this.wrongly_answered++;
+		}		
+		this.total_answer = this.correctly_answered + this.wrongly_answered;
+		if((correctly_answered/this.total_answer)<=.20) {
+			this.difficulty = 5;
+		}else if((correctly_answered/this.total_answer)<=.40) {
+			this.difficulty = 4;
+		}else if((correctly_answered/this.total_answer)<=.60) {
+			this.difficulty = 3;
+		}else if((correctly_answered/this.total_answer)<=.80) {
+			this.difficulty = 2;
+		}else if((correctly_answered/this.total_answer)<=1) {
+			this.difficulty = 1;
+		}
 	}
 
 }
