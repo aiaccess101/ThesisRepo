@@ -1,0 +1,54 @@
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0 !important;
+	background-size: cover;
+	position: fixed;
+	background-image: url('../background/exam.jpg');
+}
+
+div#header-section{
+	width: 100%;
+	height: 80px;
+	background-color: maroon;
+	opacity: 0.8;
+}
+
+
+div#container{
+	opacity: 0.90;
+	margin: 0 auto;
+	margin-top: 150px;
+	background-color: gold;
+	width: 400px;
+	height: 350px;
+	text-align: center;
+	border-radius: 20px;
+	border-style: dotted;
+}
+
+p{
+	margin-top: 30px;
+	font-size: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: maroon;
+
+}
+
+button#proceed-button{
+	background-color: maroon;
+	color: lightblue;
+	border-radius: 10px;
+	width: 200px;
+	height: 50px;
+	font-size: 15px;
+	opacity: 0.8;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+img{
+	width: 100px;
+	height: 80px;
+	margin-top: 30px;
+	margin-left: 30px;
+}

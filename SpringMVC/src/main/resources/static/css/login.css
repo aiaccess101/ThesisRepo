@@ -1,0 +1,124 @@
+@CHARSET "ISO-8859-1";
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0 !important;
+	background-size: cover;
+	position: fixed;
+	background-image: url('../background/exam.jpg');
+}
+
+div#header-section{
+	width: 100%;
+	height: 80px;
+	background-color: maroon;
+	opacity: 0.8;
+	margin: 0 auto;
+}
+
+button#home-button{
+	background-color: gold;
+	border-radius: 5px;
+	width: 150px;
+	height: 35px;
+	font-size: 15px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
+	color:maroon;
+}
+
+div#login-container{
+	opacity: 0.90;
+	margin: 0 auto;
+	margin-top: 150px;
+	background-color: gold;
+	width: 400px;
+	height: 350px;
+	text-align: center;
+	border-radius: 20px;
+	border-style: dotted;
+	
+}
+
+div#first-container{
+	margin: 0 auto;
+	background-color: maroon;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	height: 60px;
+	width: 100%;
+	font-size: 20px;
+	color: gold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+div#second-container{
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	height: 290px;
+	width: 100%;
+}
+
+button#login-button{
+	background-color: maroon;
+	margin-top: 20px;
+	color: lightblue;
+	border-radius: 10px;
+	width: 200px;
+	height: 50px;
+	font-size: 15px;
+	opacity: 0.8;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+button#login-button:hover{
+    opacity: 0.7;
+}
+
+
+div.login-username input{
+	margin-top: 45px;
+	margin-left: 25px;
+	height: 40px;
+	width: 250px;
+	border-radius: 5px;
+	font-size: 15px;
+	background-color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+label{
+	font-size: 15px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	width: 100px;
+
+}
+
+
+div.login-password input{
+	margin-top: 10px;
+	margin-left: 25px;
+	height: 40px;
+	width: 250px;
+	border-radius: 5px;
+	font-size: 15px;
+	background-color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+div.login-username input:focus{
+    border: 1px solid green;
+}
+div.login-username input:invalid{
+	border: 1px solid red;
+}
+
+div.login-password input:focus{
+	border: 1px solid green;
+}
+
+div.login-password input:invalid{
+	border: 1px solid red;
+}
+
