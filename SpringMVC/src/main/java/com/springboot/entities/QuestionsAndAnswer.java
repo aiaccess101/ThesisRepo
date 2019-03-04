@@ -65,6 +65,7 @@ public class QuestionsAndAnswer implements Serializable {
 		this.questionsAndAnswersChoiceC = choiceC;
 		this.questionsAndAnswersChoiceD = choiceD;
 		this.questionsAndAnswersQuestion = question;
+		this.difficulty = 3;
 	}
 
 	public int getQuestionsAndAnswersId() {

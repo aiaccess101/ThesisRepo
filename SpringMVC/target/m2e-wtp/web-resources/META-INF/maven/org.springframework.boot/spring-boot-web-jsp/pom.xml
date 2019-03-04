@@ -75,6 +75,27 @@
 			<artifactId>tiles-jsp</artifactId>
 			<version>3.0.5</version>
 		</dependency>
+		<dependency>
+    		<groupId>edu.stanford.nlp</groupId>
+    		<artifactId>stanford-corenlp</artifactId>
+    		<version>3.9.2</version>
+		</dependency>
+		<dependency>
+    		<groupId>edu.stanford.nlp</groupId>
+    		<artifactId>stanford-corenlp</artifactId>
+    		<version>3.9.2</version>
+    		<classifier>models</classifier>
+		</dependency>
+		<dependency>
+    		<groupId>edu.stanford.nlp</groupId>
+    		<artifactId>stanford-parser</artifactId>
+    		<version>3.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.jFuzzyLogic</groupId>
+			<artifactId>jFuzzyLogic</artifactId>
+			<version>1.2.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

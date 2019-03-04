@@ -32,7 +32,6 @@ public class QuestionsAndAnswersRepository {
 			qa = questionnaire.get(i);
 			builder.append(" (");
 			builder.append( String.valueOf(qa.getQuestionsAndAnswersExamId()) + ", ");
-			builder.append( String.valueOf(qa.getQuestionsAndAnswersNumber()) + ", ");
 			builder.append( String.valueOf(qa.getQuestionsAndAnswersQuestion()) + ", ");
 			builder.append( String.valueOf(qa.getQuestionsAndAnswersChoiceA()) + ", ");
 			builder.append( String.valueOf(qa.getQuestionsAndAnswersChoiceB()) + ", ");
